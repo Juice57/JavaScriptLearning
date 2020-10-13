@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    var num = 10;
+    fun();
+    function fun() {
+      console.log(num);
+      var num=20;
+    }
+
+  //  相当于执行以下代码
+  //   var num;
+  //   function fun() {
+  //     var num;
+  //     console.log(num);
+  //     num=20;
+  //   }
+  //   num = 10;
+  //   fun();
+  //  结果：undefined
+  </script>
+</head>
+<body>
+
+</body>
+</html>

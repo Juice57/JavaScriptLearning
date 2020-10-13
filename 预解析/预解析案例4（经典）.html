@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    f1();
+    console.log(c);
+    console.log(b);
+    console.log(a);
+    function f1() {
+      var a = b = c = 9;
+      //相当于var a = 9; b = 9; c = 9;  b和c直接赋值 没有var声明 当全局变量看
+      console.log(a);
+      console.log(b);
+      console.log(c);
+    }
+  //  相当于执行以下代码
+  //   function f1() {
+  //     var a;
+  //     a = b = c = 9;
+  //     console.log(a);
+  //     console.log(b);
+  //     console.log(c);
+  //   }
+  //   f1();
+  //   console.log(c);  //c是全局变量
+  //   console.log(b);  //b是全局变量
+  //   console.log(a);
+  //  结果
+  //  9
+  //  9
+  //  9
+  //  9
+  //  9
+  //  报错
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

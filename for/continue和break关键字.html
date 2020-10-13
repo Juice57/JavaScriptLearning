@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    //continue关键字 推出本次（当前次循环） 继续执行剩余次数循环
+    for(var i =1;i<=5;i++){
+      if(i ==3){
+        continue; // 只要遇见continue 推出本次循环 直接跳到i++
+      }
+      console.log('我正在吃第'+ i +'个包子');
+    }
+
+    //1.求1~100之间，除了能被7整除之外的整数和
+    var sum = 0;
+    for (var i=1; i<=100; i++){
+      if(i%7 == 0){
+        continue;
+      }
+      sum = sum + i;
+    }
+    console.log(sum);
+
+    //break关键字 退出整个循环
+    for(var i =1;i<=5;i++){
+      if(i ==3){
+        break; // 只要遇见break 推出整个循环
+      }
+      console.log('我正在吃第'+ i +'个包子');
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

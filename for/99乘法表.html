@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    var str = '';
+    for (var i = 1; i<=9; i++){ //控制行数
+      for (var j = 1; j<=i; j++){ //控制列数 打印个数不同主要是j<=i
+        //1 × 2 = 2
+        str += j + '×' + i + '=' + i*j + '\t' ;
+      }
+      str = str + '\n';
+    }
+    console.log(str);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
