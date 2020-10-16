@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    function unique(arr) {
+      var newArr = [];
+      for (var i=0; i<arr.length; i++){
+        if (newArr.indexOf(arr[i]) === -1){  //核心代码
+          newArr.push(arr[i]);   //核心代码
+        }
+      }
+      return newArr;
+    }
+
+    var demo = unique(['a','b','d','e','a','c','d','b']);
+    console.log(demo);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
