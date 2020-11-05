@@ -6,20 +6,20 @@
   <script>
     // 利用对象封装自己的数学对象 里面有PI 最大值 和 最小值
     var myMath = {
-      PI:3.141592653,
+      PI: 3.141592653,
       max: function () {
         var max = arguments[0];
-        for (var i =1;i<=arguments.length;i++){
-          if (arguments[i]>max){
+        for (var i = 1; i <= arguments.length; i++) {
+          if (arguments[i] > max) {
             max = arguments[i];
           }
         }
-          return max;
+        return max;
       },
       min: function () {
         var min = arguments[0];
-        for (var i =1;i<=arguments.length;i++){
-          if (arguments[i]<min){
+        for (var i = 1; i <= arguments.length; i++) {
+          if (arguments[i] < min) {
             min = arguments[i];
           }
         }
@@ -29,8 +29,8 @@
     }
 
     console.log(myMath.PI);
-    console.log(myMath.max(1,44,2));
-    console.log(myMath.min(6,1,33));
+    console.log(myMath.max(1, 44, 2));
+    console.log(myMath.min(6, 1, 33));
   </script>
 </head>
 <body>
